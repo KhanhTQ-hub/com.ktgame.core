@@ -1,0 +1,19 @@
+{
+  "name": "com.ktgame.core",
+  "version": "1.0.0",
+  "displayName": "com.ktgame.core",
+  "description": "KTgame Core",
+  "author": {
+    "name": "ktgame",
+    "email": "khanhquang0912qh@gmail.com",
+    "url": "https://github.com/KhanhTQ-hub/com.ktgame.core.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "com.ktgame.unitask": "1.0.0"
+  },
+  "unity": "2022.3"
+}
