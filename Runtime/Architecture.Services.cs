@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-//using com.unimob.foundation;
+using com.ktgame.foundation;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -61,7 +61,7 @@ namespace com.ktgame.core
 			{
 				if (service.Value is IInitializable initializable)
 				{
-					//Log.Info($"Initialize Service {index}: [{service.Key.Name}] => [{service.Value.GetType().Name}]");
+					Log.Info($"Initialize Service {index}: [{service.Key.Name}] => [{service.Value.GetType().Name}]");
 					await initializable.OnInitialize(architecture);
 					initializable.Initialized = true;
 					index++;
