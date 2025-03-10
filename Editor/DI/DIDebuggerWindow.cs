@@ -65,8 +65,7 @@ namespace com.ktgame.core.di.editor
 			if (!_isInitialized)
 			{
 				// Check if it already exists (deserialized from window layout file or scriptable object)
-				if (_treeViewState == null)
-					_treeViewState = new TreeViewState();
+				_treeViewState ??= new TreeViewState();
 
 				bool firstInit = _multiColumnHeaderState == null;
 				var headerState = MultiColumnTreeView.CreateDefaultMultiColumnHeaderState();
@@ -269,7 +268,7 @@ namespace com.ktgame.core.di.editor
 
 			var item = TreeView.Find(selection.Single());
 
-			if (item == null || item.Callsite == null)
+			if (item?.Callsite == null)
 			{
 				return;
 			}
