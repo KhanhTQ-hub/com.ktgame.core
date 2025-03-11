@@ -13,7 +13,7 @@
     "url": ""
   },
   "dependencies": {
-    "com.ktgame.unitask": "1.0.0"
-  },
-  "unity": "2022.3"
+    "com.ktgame.unitask": "1.0.0",
+    "com.ktgame.foundation": "1.0.1"
+  }
 }
