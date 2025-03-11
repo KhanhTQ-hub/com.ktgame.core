@@ -5,7 +5,7 @@ namespace com.ktgame.core.di
 	internal sealed class TransientTypeResolver : IResolver
 	{
 		private readonly Type _concreteType;
-		private readonly DisposableCollection _disposables = new();
+		private readonly DisposableCollection _disposables = new DisposableCollection();
 		public Lifetime Lifetime => Lifetime.Transient;
 
 		public TransientTypeResolver(Type concreteType)

@@ -9,10 +9,11 @@ namespace com.ktgame.core.di
 	{
 		private const BindingFlags Flags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly;
 
-		private static readonly List<FieldInfo> _fields = new();
-		private static readonly List<PropertyInfo> _properties = new();
-		private static readonly List<MethodInfo> _methods = new();
-		private static readonly Dictionary<Type, TypeAttributeInfo> _dictionary = new();
+		private static readonly List<FieldInfo> _fields = new List<FieldInfo>();
+		private static readonly List<PropertyInfo> _properties = new List<PropertyInfo>();
+		private static readonly List<MethodInfo> _methods = new List<MethodInfo>();
+
+		private static readonly Dictionary<Type, TypeAttributeInfo> _dictionary = new Dictionary<Type, TypeAttributeInfo>();
 
 		internal static TypeAttributeInfo Get(Type type)
 		{

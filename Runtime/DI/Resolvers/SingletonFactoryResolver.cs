@@ -6,7 +6,7 @@ namespace com.ktgame.core.di
 	{
 		private object _instance;
 		private readonly Func<Injector, object> _factory;
-		private readonly DisposableCollection _disposables = new();
+		private readonly DisposableCollection _disposables = new DisposableCollection();
 
 		public Lifetime Lifetime => Lifetime.Singleton;
 

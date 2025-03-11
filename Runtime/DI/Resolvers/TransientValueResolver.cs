@@ -5,7 +5,7 @@ namespace com.ktgame.core.di
 	internal sealed class TransientValueResolver : IResolver
 	{
 		private object _value;
-		private readonly DisposableCollection _disposables = new();
+		private readonly DisposableCollection _disposables = new DisposableCollection();
 		public Lifetime Lifetime => Lifetime.Transient;
 
 		public TransientValueResolver(object value)

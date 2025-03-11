@@ -7,7 +7,7 @@ namespace com.ktgame.core.di
 {
     internal static class TypeConstructionInfoCache
     {
-        private static readonly Dictionary<Type, TypeConstructionInfo> _dictionary = new();
+        private static readonly Dictionary<Type, TypeConstructionInfo> _dictionary = new Dictionary<Type, TypeConstructionInfo>();
 
         internal static TypeConstructionInfo Get(Type type)
         {

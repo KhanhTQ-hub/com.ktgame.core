@@ -5,7 +5,7 @@ namespace com.ktgame.core.di
 	internal sealed class TransientFactoryResolver : IResolver
 	{
 		private readonly Func<Injector, object> _factory;
-		private readonly DisposableCollection _disposables = new();
+		private readonly DisposableCollection _disposables = new DisposableCollection();
 		public Lifetime Lifetime => Lifetime.Transient;
 
 		public TransientFactoryResolver(Func<Injector, object> factory)

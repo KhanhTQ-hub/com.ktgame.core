@@ -6,7 +6,7 @@ namespace com.ktgame.core.di
 	{
 		private object _instance;
 		private readonly Type _concreteType;
-		private readonly DisposableCollection _disposables = new();
+		private readonly DisposableCollection _disposables = new DisposableCollection();
 		public Lifetime Lifetime => Lifetime.Singleton;
 
 		public SingletonTypeResolver(Type concreteType)

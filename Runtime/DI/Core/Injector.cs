@@ -5,11 +5,11 @@ namespace com.ktgame.core.di
 {
 	public class Injector : IInjector
 	{
-		private readonly DisposableCollection _disposables = new();
+		private readonly DisposableCollection _disposables = new DisposableCollection();
 		private readonly ConstructorInjector _constructorInjector;
 		private readonly AttributeInjector _attributeInjector;
 
-		public Dictionary<Type, IResolver> ResolversByContract { get; } = new();
+		public Dictionary<Type, IResolver> ResolversByContract { get; } = new Dictionary<Type, IResolver>();
 
 		public Injector()
 		{

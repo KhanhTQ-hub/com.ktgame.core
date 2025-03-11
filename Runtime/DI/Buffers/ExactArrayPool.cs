@@ -4,9 +4,9 @@ namespace com.ktgame.core.di
 {
 	internal sealed class ExactArrayPool<T>
 	{
-		public static readonly ExactArrayPool<T> Shared = new();
+		public static readonly ExactArrayPool<T> Shared = new ExactArrayPool<T>();
 
-		private readonly ConcurrentDictionary<int, ConcurrentQueue<T[]>> _buckets = new();
+		private readonly ConcurrentDictionary<int, ConcurrentQueue<T[]>> _buckets = new ConcurrentDictionary<int, ConcurrentQueue<T[]>>();
 
 		public T[] Rent(int size)
 		{

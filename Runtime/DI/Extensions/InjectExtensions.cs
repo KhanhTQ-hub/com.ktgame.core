@@ -4,7 +4,7 @@ namespace com.ktgame.core.di
 {
     public static class InjectExtensions
     {
-        private static readonly ConditionalWeakTable<Injector, DebugProperties> _containerDebugProperties = new();
+        private static readonly ConditionalWeakTable<Injector, DebugProperties> _containerDebugProperties = new ConditionalWeakTable<Injector, DebugProperties>();
 
         public static DebugProperties GetDebugProperties(this Injector container)
         {

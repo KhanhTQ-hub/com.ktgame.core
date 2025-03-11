@@ -9,7 +9,7 @@ namespace com.ktgame.core.di
 {
 	internal static class EnumerableExtensions
 	{
-		private static readonly ConcurrentDictionary<Type, Func<IEnumerable, object>> _enumerableCastDelegates = new();
+		private static readonly ConcurrentDictionary<Type, Func<IEnumerable, object>> _enumerableCastDelegates = new ConcurrentDictionary<Type, Func<IEnumerable, object>>();
 		private static readonly MethodInfo _enumerableCastMethodInfo = typeof(Enumerable).GetMethod(nameof(Enumerable.Cast))!;
 
 		public static object CastDynamic(this IEnumerable source, Type target)

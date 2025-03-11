@@ -3,7 +3,7 @@ namespace com.ktgame.core.di
 	internal sealed class SingletonValueResolver : IResolver
 	{
 		private readonly object _value;
-		private readonly DisposableCollection _disposables = new();
+		private readonly DisposableCollection _disposables = new DisposableCollection();
 		public Lifetime Lifetime => Lifetime.Singleton;
 
 		public SingletonValueResolver(object value)
