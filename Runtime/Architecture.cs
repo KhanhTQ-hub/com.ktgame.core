@@ -74,7 +74,6 @@ namespace com.ktgame.core
 #if UNITY_ANDROID || UNITY_IOS
 			Application.lowMemory += OnLowMemory;
 #endif
-
 			await ServiceInstaller(this);
 		}
 
