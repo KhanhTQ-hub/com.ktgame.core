@@ -22,7 +22,7 @@ namespace com.ktgame.core.di
 
         public void Remove(IDisposable disposable)
         {
-#if NETSTANDARD2_0
+#if UNITY_2020_3
 			TryPop(out _);
 #else
             _stack.TryPop(out _);
@@ -31,7 +31,7 @@ namespace com.ktgame.core.di
 
         public void Dispose()
         {
-#if NETSTANDARD2_0
+#if UNITY_2020_3
 			while (TryPop(out var disposable))
 #else
             while (_stack.TryPop(out var disposable))
@@ -41,7 +41,7 @@ namespace com.ktgame.core.di
             }
         }
 		
-#if NETSTANDARD2_0
+#if UNITY_2020_3
 		public bool TryPop(out IDisposable disposable)
 		{
 			if (_stack.Count > 0)
