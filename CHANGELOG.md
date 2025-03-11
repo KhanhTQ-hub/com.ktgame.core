@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/KhanhTQ-hub/com.ktgame.core/compare/v1.0.4...v1.0.5) (2025-03-11)
+
+
+### Bug Fixes
+
+* update version ([2cc8f77](https://github.com/KhanhTQ-hub/com.ktgame.core/commit/2cc8f77000c4790f472ef80d143fb1fda0b72986))
+
 ## [1.0.4](https://github.com/KhanhTQ-hub/com.ktgame.core/compare/v1.0.3...v1.0.4) (2025-03-11)
 
 
