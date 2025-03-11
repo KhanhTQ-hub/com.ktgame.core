@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/KhanhTQ-hub/com.ktgame.core/compare/v1.0.2...v1.0.3) (2025-03-11)
+
+
+### Bug Fixes
+
+* dependency foudation ([bd011d6](https://github.com/KhanhTQ-hub/com.ktgame.core/commit/bd011d65ce00dddf25fa59d12081e9e6b5d0563e))
+
 ## [1.0.2](https://github.com/KhanhTQ-hub/com.ktgame.core/compare/v1.0.1...v1.0.2) (2025-03-10)
 
 
