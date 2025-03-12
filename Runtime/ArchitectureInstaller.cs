@@ -7,7 +7,7 @@ namespace com.ktgame.core
 {
 	internal sealed class ArchitectureInstaller
 	{
-		private const RuntimeInitializeLoadType InitializeLoadType = RuntimeInitializeLoadType.BeforeSceneLoad;
+		private const RuntimeInitializeLoadType InitializeLoadType = RuntimeInitializeLoadType.AfterSceneLoad;
 
 		[RuntimeInitializeOnLoadMethod(InitializeLoadType)]
 		private static void OnLoad()
