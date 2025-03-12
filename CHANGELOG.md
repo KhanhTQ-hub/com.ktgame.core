@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/KhanhTQ-hub/com.ktgame.core/compare/v1.0.5...v1.0.6) (2025-03-12)
+
+
+### Bug Fixes
+
+* afterSceneLoad ([2735236](https://github.com/KhanhTQ-hub/com.ktgame.core/commit/27352360958d33915eca9dace7a170b97b6e3863))
+
 ## [1.0.5](https://github.com/KhanhTQ-hub/com.ktgame.core/compare/v1.0.4...v1.0.5) (2025-03-11)
 
 
