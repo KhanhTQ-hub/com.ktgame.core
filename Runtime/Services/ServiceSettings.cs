@@ -4,7 +4,7 @@ namespace com.ktgame.core
 {
     public abstract class ServiceSettings : ScriptableObject
     {
-        private const string SettingsPath = "Assets/Plugins/Unimob/Settings";
+        private const string SettingsPath = "Assets/Plugins/Ktgame/Settings";
 
         protected virtual bool IsEditorOnly => false;
 
