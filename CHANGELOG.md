@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/KhanhTQ-hub/com.ktgame.core/compare/v1.0.6...v1.0.7) (2025-03-24)
+
+
+### Bug Fixes
+
+* setting path ([920bdaa](https://github.com/KhanhTQ-hub/com.ktgame.core/commit/920bdaaa231e9f7fb063378b163647b158887bbd))
+
 ## [1.0.6](https://github.com/KhanhTQ-hub/com.ktgame.core/compare/v1.0.5...v1.0.6) (2025-03-12)
 
 
