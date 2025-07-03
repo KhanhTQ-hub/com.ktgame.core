@@ -38,7 +38,7 @@ jobs:
         run: |
           echo "registry=http://3.25.208.95:4873/" > ~/.npmrc
           echo "//3.25.208.95:4873/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
-          yarn install --registry http://3.25.208.95:4873/
+          yarn install
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
