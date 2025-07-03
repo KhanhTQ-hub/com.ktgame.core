@@ -36,9 +36,8 @@ jobs:
 
       - name: 🔐 Authenticate to Verdaccio
         run: |
-          echo "registry=http://3.25.208.95:4873/" > ~/.npmrc
-          echo "//3.25.208.95:4873/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
           yarn install
+          echo "//3.25.208.95:4873/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
