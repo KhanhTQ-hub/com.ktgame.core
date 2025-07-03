@@ -44,7 +44,6 @@ jobs:
           yarn config set registry http://3.25.208.95:4873/
           yarn config set "strict-ssl" false -g
           npm config set "strict-ssl" false -g
-          npm config set registry http://3.25.208.95:4873/
           npm publish --registry http://3.25.208.95:4873/
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
