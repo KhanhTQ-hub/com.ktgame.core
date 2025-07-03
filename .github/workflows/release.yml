@@ -36,7 +36,7 @@ jobs:
 
       - name: 🔐 Authenticate to Verdaccio
         run: |
-          echo "@com.ktgame:registry=http://3.25.208.95:4873/" > ~/.npmrc
+          echo "com.ktgame:registry=http://3.25.208.95:4873/" > ~/.npmrc
           echo "//3.25.208.95:4873/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
           echo 'email=khanhquang0912qh@gmail.com' >> ~/.npmrc
           echo 'always-auth=true' >> ~/.npmrc
