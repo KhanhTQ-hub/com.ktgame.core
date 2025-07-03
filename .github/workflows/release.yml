@@ -41,6 +41,7 @@ jobs:
           yarn config set "strict-ssl" false -g
           echo "//3.25.208.95:4873/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
           npm config set "strict-ssl" false -g
-          npm publish
+          npm config set registry https://registry.npmjs.org/
+          npm publish --registry http://3.25.208.95:4873
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
