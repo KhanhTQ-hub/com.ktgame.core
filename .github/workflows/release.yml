@@ -35,15 +35,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🔐 Authenticate to Verdaccio
-        run: |
-          echo "com.ktgame:registry=http://3.25.208.95:4873/" > ~/.npmrc
-          echo "//3.25.208.95:4873/:_authToken=$NODE_AUTH_TOKEN" > ~/.npmrc
-          echo 'email=khanhquang0912qh@gmail.com' >> ~/.npmrc
-          echo 'always-auth=true' >> ~/.npmrc
-          yarn install --registry http://3.25.208.95:4873/
-          yarn config set registry http://3.25.208.95:4873/
-          yarn config set "strict-ssl" false -g
-          npm config set "strict-ssl" false -g
-          npm publish --registry http://3.25.208.95:4873/
+        uses: verdaccio/github-actions/publish@v1
+        with:
+          registry-url: http://3.25.208.95:4873/
+          token: ${{ secrets.VERDACCIO_TOKEN }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.VERDACCIO_TOKEN}}
