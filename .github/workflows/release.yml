@@ -35,7 +35,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🔐 Authenticate to Verdaccio
-        uses: verdaccio/github-actions/publish@v1
+        uses: verdaccio/github-actions/publish@master
         with:
           registry-url: http://3.25.208.95:4873/
           token: ${{ secrets.VERDACCIO_TOKEN }}
